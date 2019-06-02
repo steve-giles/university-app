@@ -1,0 +1,18 @@
+<div class="m-1">
+  <h1>{{ title }}</h1>
+  <div class="mb-1">
+    <button (click)="onAddRow()" class="mr-1 btn btn btn-secondary btn-sm">Add University</button>
+    <button (click)="onRemoveSelected()" class="mr-1 btn btn btn-secondary btn-sm">Remove Selected</button>
+  </div>
+  <ag-grid-angular
+    style="width: 1200px; height: 500px;"
+    class="ag-theme-balham"
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [defaultColDef]="defaultColDef"
+    [pagination]="true"
+    (gridReady)="onGridReady($event)"
+    [animateRows]="true"
+    [rowSelection]="rowSelection">
+  </ag-grid-angular>
+</div>
