@@ -10,9 +10,9 @@ The application allows users to:
 
 ## Development server
 
-`git clone https://github.com/angular/quickstart  my-proj`
+`git clone https://github.com/steve-giles/university-app  university-app`
 
-`cd my-proj`
+`cd university-app`
 
 `npm install`
 
